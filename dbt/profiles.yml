@@ -1,0 +1,26 @@
+saas_analytics:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: cloudtask-project
+      dataset: saas_analytics_dev
+      keyfile: /Users/elenajones/Documents/GitHub/cloudtask-pro-analytics/service-account-key.json
+      threads: 4
+      timeout_seconds: 300
+      location: US
+      priority: interactive
+      retries: 1
+
+    prod:
+      type: bigquery
+      method: service-account
+      project: cloudtask-project
+      dataset: saas_analytics_prod
+      keyfile: /Users/elenajones/Documents/GitHub/cloudtask-pro-analytics/service-account-key.json
+      threads: 4
+      timeout_seconds: 300
+      location: US
+      priority: interactive
+      retries: 1

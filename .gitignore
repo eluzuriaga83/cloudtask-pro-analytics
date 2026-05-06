@@ -1,0 +1,19 @@
+# Sensitive files
+service-account-key.json
+*.env
+.env
+
+# dbt artifacts
+target/
+dbt_packages/
+logs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+__pycache__/
+*.pyc

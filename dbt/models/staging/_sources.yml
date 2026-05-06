@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw
+    database: cloudtask-project
+    schema: saas_analytics_dev
+    tables:
+      - name: subscriptions
+      - name: monthly_revenue

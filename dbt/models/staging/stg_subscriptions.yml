@@ -1,0 +1,51 @@
+version: 2
+
+models:
+  - name: stg_subscriptions
+    description: "Cleaned subscription data"
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+      
+      - name: signup_date
+        tests:
+          - not_null
+      
+      - name: churn_date
+        tests:
+          - not_null:
+              config:
+                where: "churned = 1"
+      
+      - name: churned
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: [0, 1]
+                quote: false
+      
+      - name: monthly_revenue
+        tests:
+          - not_null
+      
+      - name: nps_score
+        tests:
+          - not_null
+      
+      - name: feature_usage_pct
+        tests:
+          - not_null
+      
+      - name: months_active
+        tests:
+          - not_null
+      
+      - name: plan
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['Starter', 'Professional', 'Business', 'Enterprise']

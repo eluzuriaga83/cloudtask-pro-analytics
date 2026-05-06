@@ -1,0 +1,38 @@
+version: 2
+
+models:
+  - name: stg_monthly_revenue
+    description: "Monthly revenue metrics"
+    columns:
+      - name: date
+        tests:
+          - unique
+          - not_null
+      
+      - name: total_active_customers
+        tests:
+          - not_null
+      
+      - name: new_customers
+        tests:
+          - not_null
+      
+      - name: churned_customers
+        tests:
+          - not_null
+      
+      - name: monthly_churn_rate_pct
+        tests:
+          - not_null
+      
+      - name: total_mrr
+        tests:
+          - not_null
+      
+      - name: mrr_per_active_customer
+        tests:
+          - not_null
+      
+      - name: monthly_cac_spend
+        tests:
+          - not_null
