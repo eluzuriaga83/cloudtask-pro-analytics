@@ -168,7 +168,7 @@ END
 |-----------|---------|
 | Uniqueness | `customer_id` has no duplicates |
 | Not null | Required fields always populated |
-| Accepted values | `risk_level` only in [High, Medium, Low] |
+| Accepted values | `risk_level` only in [Very High, High, Medium, Low] |
 | Referential integrity | All customers in facts exist in dim |
 | Business logic | Churned customers must have `churn_date` |
 | Range checks | `feature_usage_pct` between 0 and 100 |
