@@ -252,7 +252,7 @@ dbt docs serve    # View at http://localhost:8000
 - **Very High Risk** customers churn at **75%** vs **10%** for Medium Risk — a **7x difference**
 - Risk level combines two factors: feature usage % + NPS score
 - **Low Risk customers have 0% churn** — strong signal that engaged customers stay
-- Early churn (0–3 months) is the highest-risk period — onboarding matters most
+- Mid-Term churn (3-12 months) is the highest-risk period 
 
 ---
 
