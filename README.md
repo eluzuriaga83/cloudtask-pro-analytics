@@ -1,56 +1,37 @@
-# CloudTask Pro — Resume Summary & GitHub README
+# 📊 CloudTask Pro — SaaS Churn & Revenue Analytics Platform
+
+> End-to-end analytics platform built with Python, dbt, BigQuery, and Tableau to investigate board-level churn concerns for a fast-growing SaaS company.
+
+## Table of Contents
+
+* [Project Overview](#project-overview)
+* [Executive Summary](#1-executive-summary)
+* [Business Context](#2-business-context)
+* [Architecture](#3-architecture)
+* [Analysis](#4-analysis)
+  + [Executive Summary Dashboard](#executive-summary-dashboard)
+  + [Churn Analysis Dashboard](#churn-analysis-dashboard)
+  + [Unit Economics Dashboard](#unit-economics-dashboard)
+  + [Risk Assessment Dashboard](#risk-assessment-dashboard)
+  + [Retention Insights Dashboard](#retention-insights-dashboard)
+  + [Growth Analysis Dashboard](#growth-analysis-dashboard)
+* [Key Insights](#5-key-insights)
+* [Recommendations](#6-recommendations)
+  + [Immediate Actions](#immediate-actions)
+  + [Strategic Initiatives](#strategic-initiatives)
+  + [Long-Term Opportunities](#long-term-opportunities)
+* [Methodology](#methodology)
+* [dbt Models](#dbt-models)
+* [Data Quality Tests](#data-quality-tests)
+* [Project Structure](#project-structure)
+* [Quick Start](#quick-start)
+* [Contact](#contact)
 
 ---
 
-## 📄 RESUME SUMMARY (Pick the version that fits)
+## Project Overview
 
----
-
-### Version 1: One Bullet (Short — for resume projects section)
-
-**CloudTask Pro — SaaS Churn & Revenue Analytics Platform** | Python · dbt · BigQuery · Tableau
-- Designed and built a modern data stack to investigate board-level churn concerns for a fast-growing SaaS company (0→600 customers since 2022) — ingesting subscription and revenue data through a Python ETL pipeline, transforming it with dbt (staging + dim/fact marts in BigQuery), and delivering 5 executive Tableau dashboards that answered CFO questions on churn trends, at-risk segments, and unit economics.
-
----
-
-### Version 2: Three Bullets (Recommended — shows depth)
-
-**CloudTask Pro — SaaS Churn & Revenue Analytics Platform** | Python · dbt · BigQuery · Tableau
-- Designed a production-grade data pipeline using Python for validation and ingestion, dbt for layered transformations (staging → dim_customers, fct_monthly_metrics), and BigQuery as the warehouse — following dimensional modeling best practices with 40+ automated data quality tests.
-- Built 5 Tableau executive dashboards answering CFO-level questions on churn trends, high-risk customer segments, and unit economics — surfacing that annual billing customers churn 33% less than monthly, the Business plan drives 43% of total revenue, and Very High Risk customers churn at 7x the rate of Medium Risk customers.
-- Implemented a multi-factor customer risk scoring model combining feature usage and NPS score to proactively identify at-risk customers before they churn.
-
----
-
-### Version 3: Full Project Block (For portfolio/LinkedIn)
-
-**CloudTask Pro — SaaS Analytics Portfolio Project**
-Tech Stack: Python · dbt · Google BigQuery · Tableau
-Role: End-to-end analytics engineering and data visualization
-
-- Architected a full modern data stack analytics platform from raw CSV data to executive dashboards, simulating a real-world SaaS analytics function for a 600-customer company with 4 years of data (2022–2025).
-- Built Python ETL pipeline handling data validation, type conversion, and BigQuery loading — enforcing data quality before data enters the warehouse.
-- Designed a dbt transformation layer with 5 models across staging and marts (stg_subscriptions, stg_monthly_revenue, dim_customers, fct_monthly_metrics) with 40+ automated tests covering uniqueness, referential integrity, accepted values, and business logic.
-- Answered 5 CFO-level business questions on churn trends, plan profitability, unit economics (CLV vs CAC), customer risk, and retention cohorts — delivered through 5 interactive Tableau dashboards.
-- Surfaced key business insights: annual billing customers churn 33% less than monthly, the Business plan drives 43% of total revenue, and Very High Risk customers (low feature usage + low NPS) churn at 7x the rate of Medium Risk customers.
-
----
-
----
-
-# 📘 GITHUB README
-
----
-
-# CloudTask Pro — SaaS Analytics Platform
-
-> End-to-end analytics platform built with Python, dbt, BigQuery, and Tableau to analyze churn, revenue, and customer health for a SaaS company.
-
----
-
-## 🎯 Project Purpose
-
-This project simulates a real-world analytics engineering scenario:
+CloudTask Pro Analytics is a production-grade data platform that simulates a real-world analytics engineering scenario:
 
 > **"The board is concerned about churn. The CFO needs answers."**
 
@@ -325,11 +306,11 @@ END
 
 | Test Type | Example |
 |-----------|---------|
-| Uniqueness | `customer_id` has no duplicates |
-| Not null | Required fields always populated |
-| Accepted values | `risk_level` only in [High, Medium, Low] |
-| Referential integrity | All customers in facts exist in dim |
-| Business logic | Churned customers must have `churn_date` |
+| Uniqueness | `customer_id` has no duplicates in `dim_customers` |
+| Not null | Required fields (customer_id, plan, signup_date) always populated |
+| Accepted values | `risk_level` only in [Very High Risk, High Risk, Medium Risk, Low Risk] |
+| Referential integrity | All customer_ids in fct_churn_analysis exist in dim_customers |
+| Business logic | Churned customers must have a non-null `churn_date` |
 | Range checks | `feature_usage_pct` between 0 and 100 |
 | Monthly sanity | `total_mrr` cannot be negative |
 
@@ -434,39 +415,7 @@ dbt docs serve    # View at http://localhost:8000
 6. Build dashboards
 ```
 
-
----
-
-## 📈 Key Insights
-
-### Revenue & Growth
-- **Business plan** drives **43% of total revenue** — the highest of any plan
-- **Enterprise** accounts for **30% of revenue** — high value, lower volume
-- MRR grew consistently over 4 years (2022–2025)
-
-### Churn
-- **Annual billing** customers churn **33% less** than monthly billing customers
-  - Monthly churn rate: **60.5%** (cumulative, 4yr dataset)
-  - Annual churn rate: **40.3%** (cumulative, 4yr dataset)
-- Churn rate varies significantly across plans — Starter highest, Enterprise lowest
-
-### Risk Signals
-- **Very High Risk** customers churn at **75%** vs **10%** for Medium Risk — a **7x difference**
-- Risk level combines two factors: feature usage % + NPS score
-- **Low Risk customers have 0% churn** — strong signal that engaged customers stay
-- Early churn (0–3 months) is the highest-risk period — onboarding matters most
-
----
-
-## 📊 Tableau Dashboards
-
-| Dashboard | Key Charts | Business Question |
-|-----------|-----------|-------------------|
-| **1. Executive Summary** | MRR trend, Churn trend, Customers by plan, Revenue by plan | How is the business performing? |
-| **2. Churn Analysis** | Churn by plan, by company size, top reasons, churn timing | Why and when do customers leave? |
-| **3. Unit Economics** | CLV vs CAC, CLV:CAC ratio by plan, payback period | Which plans are most profitable? |
-| **4. Risk Assessment** | Risk distribution, feature usage vs churn, at-risk customer table | Who is about to churn? |
-| **5. Retention & Cohorts** | Cohort heatmap, retention curves, churn timing by plan | How long do customers stay? |
+> ⚠️ **Security:** `service-account-key.json`, `venv/`, `dbt/target/`, and `dbt/logs/` are excluded via `.gitignore`. Never commit credentials to GitHub.
 
 ---
 
