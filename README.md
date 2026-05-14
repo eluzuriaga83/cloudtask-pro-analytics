@@ -47,9 +47,6 @@ The focus of this project is on **data pipeline engineering, dimensional modelin
 
 * **Goal:** Analyze 4 years of subscription and revenue data (2022–2025) to answer 5 CFO-level questions on churn trends, customer risk, unit economics, and retention — delivering a self-service analytics platform for executive stakeholders.
 
-<!-- Add your Executive Summary dashboard screenshot here -->
-![Executive Summary Dashboard](images/dashboard1_executive_summary.png)
-
 * **Key Insights:**
   + All 4 subscription plans are highly profitable — Starter delivers a 9.5x CLV:CAC ratio; Enterprise reaches 337.5x
   + Annual billing customers churn 33% less than monthly customers (40.3% vs 60.5% cumulative)
