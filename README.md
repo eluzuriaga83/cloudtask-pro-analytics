@@ -372,7 +372,7 @@ cloudtask-pro-analytics/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/eluzuriaga83/cloudtask-pro-analytics.git
+git clone https://github.com/YOUR_USER/cloudtask-pro-analytics.git
 cd cloudtask-pro-analytics
 ```
 
