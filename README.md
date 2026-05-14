@@ -246,7 +246,7 @@ Tableau Dashboards (6 interactive dashboards)
 
 **Visualization:** Six Tableau dashboards with a consistent navigation bar, cross-dashboard filters (plan, industry, billing cycle, date range), and drill-down click actions.
 
-**Tools Used:** Python (Pandas), dbt (dbt-fusion 2.0), Google BigQuery, Tableau
+**Tools Used:** Python (Pandas), dbt, Google BigQuery, Tableau
 
 ---
 
@@ -372,7 +372,7 @@ cloudtask-pro-analytics/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/cloudtask-pro-analytics.git
+git clone https://github.com/eluzuriaga83/cloudtask-pro-analytics.git
 cd cloudtask-pro-analytics
 ```
 
@@ -415,8 +415,6 @@ dbt docs serve    # View at http://localhost:8000
 6. Build dashboards
 ```
 
-> ⚠️ **Security:** `service-account-key.json`, `venv/`, `dbt/target/`, and `dbt/logs/` are excluded via `.gitignore`. Never commit credentials to GitHub.
-
 ---
 
 ## 📄 License
@@ -428,6 +426,6 @@ MIT — free to use for learning and portfolio purposes.
 ## 📧 Contact
 
 **Your Name**
-📧 your.email@email.com
-💼 [LinkedIn](https://www.linkedin.com/in/yourprofile/)
-🐙 [GitHub](https://github.com/YOUR_USERNAME)
+📧 elcjones@proton.me
+💼 [LinkedIn](https://www.linkedin.com/in/elenajoneslc/)
+🐙 [GitHub](https://github.com/eluzuriaga83)
