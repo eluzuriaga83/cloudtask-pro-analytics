@@ -129,8 +129,7 @@ Tableau Dashboards (6 interactive dashboards)
 
 ### Executive Summary Dashboard
 
-*The Executive Summary provides C-suite visibility into the four most critical KPIs: Latest Month MRR ($292.6K), total active customers (600), average CAC ($200), and latest month churn rate (1.42%). The MRR trend shows consistent upward growth from 2022 toward the $450K annual target. The churn trend shows a strong declining pattern — from a peak of 20% in early 2022 to approximately 2% by 2026, confirming retention initiatives are working. The Business plan drives 42.52% of total revenue despite not being the largest customer segment by count.*
-
+The Executive Summary provides C-suite visibility into the four most critical KPIs: Latest Month MRR ($292.6K), total active customers (600), average CAC ($200), and latest month churn rate (1.42%). The MRR trend shows consistent upward growth from 2022 toward the $450K annual target. The churn trend shows a strong declining pattern — from a peak of 20% in early 2022 to approximately 2% by 2026, confirming retention initiatives are working. The Business plan drives 42.52% of total revenue despite not being the largest customer segment by count.
 <!-- Add your dashboard screenshot here -->
 ![Executive Summary](images/dashboard1_executive_summary.png)
 
@@ -138,7 +137,7 @@ Tableau Dashboards (6 interactive dashboards)
 
 ### Churn Analysis Dashboard
 
-*Churn varies dramatically by plan — Starter customers churn at 70.5% while Enterprise customers churn at only 22.0%. Large companies churn most (63.2%) vs Medium (46.7%). Annual billing customers churn 33% less than monthly (40.3% vs 60.5%), with an overall average of 52.2%. The top 5 churn reasons are Budget Cuts (23.7%), Company Closed (21.4%), Poor Support (18.8%), No Longer Needed (18.3%), and Missing Features (17.9%). Mid-term churn (months 3–12) is the most common churn window at 39.6% of all churned customers — customers are passing onboarding but losing perceived value before their first renewal decision.*
+Churn varies dramatically by plan — Starter customers churn at 70.5% while Enterprise customers churn at only 22.0%. Large companies churn most (63.2%) vs Medium (46.7%). Annual billing customers churn 33% less than monthly (40.3% vs 60.5%), with an overall average of 52.2%. The top 5 churn reasons are Budget Cuts (23.7%), Company Closed (21.4%), Poor Support (18.8%), No Longer Needed (18.3%), and Missing Features (17.9%). Mid-term churn (months 3–12) is the most common churn window at 39.6% of all churned customers — customers are passing onboarding but losing perceived value before their first renewal decision.
 
 ![Churn Analysis](images/dashboard2_churn_analysis.png)
 
@@ -146,7 +145,7 @@ Tableau Dashboards (6 interactive dashboards)
 
 ### Unit Economics Dashboard
 
-*All 4 plans are highly profitable with CAC consistently around $200 across plans regardless of tier. Enterprise delivers the strongest CLV:CAC ratio at 337.5x ($66.7K CLV), followed by Business at 108.1x ($21.9K CLV), Professional at 41.1x ($8.1K CLV), and Starter at 9.5x ($1.9K CLV). Average monthly revenue per customer ranges from $2.98K (Enterprise) to $0.22K (Starter). 78% of customers have CLV under $15K — driven primarily by mid-term churn compressing lifetime value before customers reach full revenue potential. Average customer tenure across all plans is 15.74 months.*
+All 4 plans are highly profitable with CAC consistently around $200 across plans regardless of tier. Enterprise delivers the strongest CLV:CAC ratio at 337.5x ($66.7K CLV), followed by Business at 108.1x ($21.9K CLV), Professional at 41.1x ($8.1K CLV), and Starter at 9.5x ($1.9K CLV). Average monthly revenue per customer ranges from $2.98K (Enterprise) to $0.22K (Starter). 78% of customers have CLV under $15K — driven primarily by mid-term churn compressing lifetime value before customers reach full revenue potential. Average customer tenure across all plans is 15.74 months.
 
 ![Unit Economics](images/dashboard3_unit_economics.png)
 
@@ -154,7 +153,7 @@ Tableau Dashboards (6 interactive dashboards)
 
 ### Risk Assessment Dashboard
 
-*The multi-factor risk model classifies all 600 customers into four tiers using feature usage percentage and NPS score. Very High Risk customers (310 total — 51.7% of the base) churn at 75.5%, compared to 39.4% (High Risk), 10.4% (Medium Risk), and 0.0% (Low Risk). Average NPS scores confirm the pattern: Very High Risk (2.4), High Risk (5.6), Medium Risk (7.3), Low Risk (9.0). The industry heatmap shows Education has the most Very High Risk customers (40), while Real Estate shows the highest risk concentration relative to its total count. Low Risk customers have 0% churn — confirming that fully engaged customers never leave.*
+The multi-factor risk model classifies all 600 customers into four tiers using feature usage percentage and NPS score. Very High Risk customers (310 total — 51.7% of the base) churn at 75.5%, compared to 39.4% (High Risk), 10.4% (Medium Risk), and 0.0% (Low Risk). Average NPS scores confirm the pattern: Very High Risk (2.4), High Risk (5.6), Medium Risk (7.3), Low Risk (9.0). The industry heatmap shows Education has the most Very High Risk customers (40), while Real Estate shows the highest risk concentration relative to its total count. Low Risk customers have 0% churn — confirming that fully engaged customers never leave.
 
 ![Risk Assessment](images/dashboard4_risk_assessment.png)
 
@@ -162,7 +161,7 @@ Tableau Dashboards (6 interactive dashboards)
 
 ### Retention Insights Dashboard
 
-*The cohort retention heatmap shows retention declining steeply between Month 3 and Month 12 across all cohorts — confirming the mid-term window as the critical intervention period. Annual billing customers retain significantly better than monthly at every milestone from Month 3 through Month 36. Education (55.8%), Media (55.6%), and Technology (54.9%) are the most loyal industries. Real Estate (39.3%) and Finance (41.0%) have the weakest retention. The Feature Usage vs. Churn scatter plot confirms that churned customers cluster at lower feature usage and shorter tenure, with the 20% usage threshold clearly separating the highest-risk customers from the rest.*
+The cohort retention heatmap shows retention declining steeply between Month 3 and Month 12 across all cohorts — confirming the mid-term window as the critical intervention period. Annual billing customers retain significantly better than monthly at every milestone from Month 3 through Month 36. Education (55.8%), Media (55.6%), and Technology (54.9%) are the most loyal industries. Real Estate (39.3%) and Finance (41.0%) have the weakest retention. The Feature Usage vs. Churn scatter plot confirms that churned customers cluster at lower feature usage and shorter tenure, with the 20% usage threshold clearly separating the highest-risk customers from the rest.
 
 ![Retention Insights](images/dashboard5_retention_insights.png)
 
@@ -170,7 +169,7 @@ Tableau Dashboards (6 interactive dashboards)
 
 ### Growth Analysis Dashboard
 
-*Average monthly MRR growth rate is 9.0% and average customer acquisition growth is 10.0%. 2022 had the strongest performance with MRR growth at 26.7%, declining to 0.9% by 2025 as the market matured. The Net MRR Change chart identifies months with unusual spikes (upper threshold: $18K) and dips (lower threshold: -$6K). A significant dip of -$10,735 was identified correlating with the highest churn month in early 2024. MRR and customer growth tracked closely throughout — indicating revenue growth is primarily driven by new customer acquisition rather than expansion or upsell revenue.*
+Average monthly MRR growth rate is 9.0% and average customer acquisition growth is 10.0%. 2022 had the strongest performance with MRR growth at 26.7%, declining to 0.9% by 2025 as the market matured. The Net MRR Change chart identifies months with unusual spikes (upper threshold: $18K) and dips (lower threshold: -$6K). A significant dip of -$10,735 was identified correlating with the highest churn month in early 2024. MRR and customer growth tracked closely throughout — indicating revenue growth is primarily driven by new customer acquisition rather than expansion or upsell revenue.
 
 ![Growth Analysis](images/dashboard6_growth_analysis.png)
 
@@ -196,37 +195,22 @@ Tableau Dashboards (6 interactive dashboards)
 
 ## 6. Recommendations
 
-### Immediate Actions
-
 1. **Launch Annual Billing Incentive Program:**
    Offer a 10–15% discount for customers switching from monthly to annual billing. The 33% churn reduction justifies significant incentive spend. Priority: Monthly billing customers in the Very High Risk tier who also have high CLV.
 
 2. **Implement Month 3 Intervention:**
    The 3-month mark is the start of the highest-churn window (39.6% of all churn). Trigger an automated engagement sequence at Day 60 for all customers with feature usage below 40% — including a product walkthrough, success review call, and ROI demonstration.
 
-3. **Activate Risk-Based Outreach:**
-   310 customers are classified as Very High Risk with a 75.5% churn rate. Assign CSM outreach immediately to the top 50 highest-value customers in this tier. Each saved Enterprise or Business customer represents $21K–$66K in retained lifetime value.
-
-### Strategic Initiatives
-
-4. **Build Expansion Revenue Motion:**
-   With growth decelerating from 26.7% to 0.9%, new customer acquisition alone can no longer sustain revenue targets. Develop upsell paths from Starter → Professional and Professional → Business with feature-gated incentives tied to usage milestones.
-
-5. **Industry-Specific Retention Programs:**
+3. **Industry-Specific Retention Programs:**
    Real Estate (39.3%) and Finance (41%) show weak retention. Design industry-specific onboarding and value demonstration tracks for these segments. Replicate the engagement patterns observed in Education and Media — the two strongest retention industries.
 
-6. **Address Controllable Churn Reasons:**
+4. **Address Controllable Churn Reasons:**
    Budget Cuts (23.7%) and Company Closed (21.4%) are largely external and unavoidable. However, Poor Support (18.8%) and Missing Features (17.9%) are directly addressable. Invest in support quality standards and a structured product feedback loop connected to the roadmap.
 
-### Long-Term Opportunities
-
-7. **Add Expansion MRR Tracking:**
-   The current model tracks acquisition and churn but not expansion revenue from plan upgrades. Adding upgrade event tracking to the data model would enable Net Revenue Retention (NRR) calculation — the most important leading indicator of SaaS growth health.
-
-8. **Predictive Churn Scoring:**
+5. **Predictive Churn Scoring:**
    The current risk model uses static thresholds. A machine learning model trained on historical churn data could produce a dynamic monthly churn probability score — enabling earlier and more precise interventions before customers reach the mid-term danger zone.
 
-9. **Automate the Pipeline:**
+6. **Automate the Pipeline:**
    Connect the pipeline to Cloud Scheduler for daily automated runs: Python validation → BigQuery load → dbt run → dbt test → Tableau extract refresh. Eliminate manual intervention from the data pipeline entirely.
 
 ---
