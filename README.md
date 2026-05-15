@@ -177,7 +177,7 @@ Average monthly MRR growth rate is 9.0% and average customer acquisition growth 
 
 ## 5. Key Insights
 
-✔ **Billing Cycle is the Strongest Lever:** Annual billing customers churn 33% less than monthly (40.3% vs 60.5%). Shifting customers from monthly to annual billing is the single highest-impact retention action available with no product changes required.
+✔ **Billing Cycle Dictates Momentum:** Annual billing customers churn 33% less than monthly (40.3% vs 60.5%). Shifting customers from monthly to annual billing is the single highest-impact retention action available with no product changes required.
 
 ✔ **Mid-Term Churn is the Biggest Problem:** 39.6% of churned customers leave between months 3 and 12 — not in the first 3 months as originally assumed. Customers are passing onboarding but losing perceived value before their first renewal decision.
 
