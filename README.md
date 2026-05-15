@@ -396,7 +396,7 @@ dbt docs serve    # View at http://localhost:8000
 6. Build dashboards
 ```
 
-[Dashboards](https://docs.google.com/presentation/d/1JIRpOcKH2usWLTG2fUXXV4vaQdKsMeq5)
+![Tableau Dashboards](https://docs.google.com/presentation/d/1JIRpOcKH2usWLTG2fUXXV4vaQdKsMeq5)
 ---
 
 ## 📄 License
